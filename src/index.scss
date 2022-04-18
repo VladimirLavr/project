@@ -1,0 +1,194 @@
+
+
+
+
+body {
+  margin: 0;
+  font-family:"Inter", system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7F6FF;
+}
+
+*{
+  font-family: 'Inter',system-ui;
+}
+.wrapper{
+  max-width: 1080px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  margin: 50px auto;
+
+
+}
+.demo{
+  max-width: 960px;
+  height: 300px;
+  background-color: #F4EFE9;
+  border-radius: 20px;
+  margin: 40px 60px 40px 60px;
+
+}
+.demoLeftText  span {
+  width: 240px;
+  margin:32px auto;
+  font-size: 38px;
+  font-weight: 700;
+
+}
+.demoLeftText{
+  margin: 0 0 0 30px
+}
+.stan{
+  color: #A5D364;
+  margin:32px 0 0 60px;
+}
+
+header{
+
+  border: 1px solid #EAEAEA;
+}
+
+h3, p {
+  margin: 0;
+}
+.content {
+  h1 {
+    margin: 0;
+  }
+}
+.cart {
+  cursor: pointer;
+}
+.user{
+  cursor: pointer;
+}
+
+
+
+
+
+
+.searchBlock{
+border:1px solid #F3F3F3;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+input{
+  border: 0;
+  padding: 13px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.cartPage{
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.cartPageIsOn{
+  position: absolute;
+  width: 420px;
+  right: 0;
+  height: 100%;
+
+
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px
+}
+.items{
+  flex: 1;
+  overflow: auto;
+  margin-bottom: 50px;
+
+}
+
+.cartTotalBlock{
+
+  li{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    div{
+      flex:1;
+      height: 1px;
+      border-bottom: 1px dashed #dfdfdf;
+      position: relative;
+      top:-4px;
+      margin: 0 8px;
+    }
+  }
+}
+h2{
+  margin: 0;
+  font-size: 24px;
+  img{
+    cursor: pointer;
+  }
+
+}
+.cartItem{
+  border: 1px solid #F3F3F3;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 20px;
+  p{
+    font-size: 16px;
+    margin: 0;
+  }
+  b{
+    font-size: 14px;
+  }
+  .removeBtn {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+};
+
+.greenButton{
+  position: relative;
+  &:hover{
+    img{
+      transform: translateX(10px);
+    }
+  }
+  img{
+    position: absolute;
+    right: 30px;
+    top:22px;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+.greenButton{
+  background: rgba(157, 212, 88, 1);
+  max-width: 100%;
+  min-height: 55px;
+  border-radius: 18px;
+  margin: 30px;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+
+  &:hover {
+    background: lighten(rgba(157, 212, 88, 1), 10%);
+
+  }
+  &:active{
+    background: darken(rgba(157, 212, 88, 1), 10%);
+
+  }
+}
